@@ -1,0 +1,72 @@
+h1, p {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    /* background-color: aqua; will not use this yet */
+    padding: 10px 0;
+}
+
+
+form {
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 300px;
+    /* the auto in this margin moves the actual form to the middle of the page */
+    margin: auto; 
+    margin-bottom: 1%;   
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 100px;
+  }
+
+/* the login button and words on it */
+input[type="submit"] {
+  background-color: orchid;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* page links navigation */
+nav ul {
+    display: flex; /* Display the list items in a row */
+    justify-content: space-around; /* Space items evenly along the main axis */
+    list-style-type: none; /* Remove the default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* home, reg, and contact us buttons */
+nav ul li {
+    background-color: orchid;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* border: none; Remove the border */
+    /* background-color: none; Remove the background color */
+} 
+
+/* the actual words home, reg, contact us */
+nav ul li a {
+    text-decoration: none; /* Remove the underline */
+    color: white; /* Set the text color */
+}
