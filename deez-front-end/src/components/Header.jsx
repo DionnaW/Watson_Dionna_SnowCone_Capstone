@@ -21,7 +21,7 @@ const Header = () => {
                         <Link className='text-sm text-blue-600 underline' to={'/register'}>Register Here</Link>
                         <Link className='text-sm text-blue-600 underline' to={'/contact'}>Contact Us</Link>
                         <Link className='text-sm text-blue-600 underline' to={'/flavors'}>Flavors</Link>
-                        <Link className='text-sm text-blue-600 underline' to={'/register'}>Toppings</Link>
+                        <Link className='text-sm text-blue-600 underline' to={'/toppings'}>Toppings</Link>
                     </>
             }
 
