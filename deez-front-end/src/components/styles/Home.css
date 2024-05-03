@@ -1,107 +1,56 @@
-.nav {
-  display: flex;
-  flex-direction: row;
-  gap: 1100px;
-  width: 100%;
-  z-index: 20;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 50px;
-  border-bottom: 5px solid blue;
-  background-color: lightgrey;
+nav {
+display: flex; /* Display the list items in a row */
+justify-content: space-around; /* Space items evenly along the main axis */
+list-style-type: none; /* Remove the default bullet points */
+padding: 0; /* Remove default padding */
 }
-  
-.nav a {
-  font-size: 30px;
-  color: blue;
+
+nav a {
+  color: white;
+  padding: 5px 10px;
   text-decoration: none;
-  justify-content: space-between;
-  text-align: c;
-}
-p {
-  font-size: 20px;
-  color: black;
+  margin-right: 10px;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
+nav li {
+  display: inline-block;
+  position: relative;
+}
 
+nav a {
+background-color: beige;
+color: black;
+padding: 5px 10px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
 
+nav .dropdown {
+  display: none;
+  position: absolute;
+  min-width: 120px;
+}
 
+nav .dropdown li {
+  display: block;
+}
 
+nav li:hover .dropdown {
+  display: block;
+}
 
+nav .dropdown li a {
+  padding: 2px 5px;
+  align-content: center;
+}
 
-
-
-
-
-/* body { */
-    /* background-image: url('./images/deez\ cold\ ones\ snow\ cone\ decals.jpg'); */
-    /* background-position: top; */
-    /* font-family: Arial, sans-serif; */
-  /* } */
-  
-/* nav { */
-  /* display: flex; Display the list items in a row */
-  /* justify-content: space-around; Space items evenly along the main axis */
-  /* list-style-type: none; Remove the default bullet points */
-  /* padding: 0; Remove default padding */
-/* } */
-/*    */
-  /* nav a { */
-    /* color: white; */
-    /* padding: 5px 10px; */
-    /* text-decoration: none; */
-    /* margin-right: 10px; */
-  /* } */
-/*    */
-/* footer { */
-    /* text-align: center; */
-    /* font-weight: bolder; */
-    /* font-size: larger; */
-    /* margin-top: 525px; */
-    /* color: black; */
-/* } */
-/*  */
-/* nav ul { */
-    /* list-style: none; */
-    /* padding: 0; */
-    /* margin: 0; */
-  /* } */
-/*    */
-/* nav li { */
-    /* display: inline-block; */
-    /* position: relative; */
-/* } */
-/*    */
-/* nav a { */
-  /* background-color: beige; */
-  /* color: black; */
-  /* padding: 5px 10px; */
-  /* border: none; */
-  /* border-radius: 5px; */
-  /* cursor: pointer; */
-/* } */
-/*    */
-  /* nav .dropdown { */
-    /* display: none; */
-    /* position: absolute; */
-    /* min-width: 120px; */
-  /* } */
-/*    */
-  /* nav .dropdown li { */
-    /* display: block; */
-  /* } */
-/*    */
-  /* nav li:hover .dropdown { */
-    /* display: block; */
-  /* } */
-/*    */
-  /* nav .dropdown li a { */
-    /* padding: 2px 5px; */
-    /* align-content: center; */
-  /* } */
-/*    */
-  /* nav .dropdown li a:hover { */
-    /* background-color: white; */
-  /* } */
+nav .dropdown li a:hover {
+  background-color: white;
+}

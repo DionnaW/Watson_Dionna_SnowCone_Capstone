@@ -5,8 +5,7 @@ function Profile() {
     const history = useHistory();
 
     function handleLogout() {
-        // Perform logout logic here
-        // For demo purposes, redirect to the login page after logout
+    //NEED TO INPUT LOGIC HERE
         history.push('/login');
     }
 

@@ -2,14 +2,14 @@ h1, p {
     text-align: center;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+/* footer { */
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* width: 100%; */
+    /* text-align: center; */
     /* background-color: aqua; will not use this yet */
-    padding: 10px 0;
-}
+    /* padding: 10px 0; */
+/* } */
 
 
 form {
