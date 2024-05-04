@@ -1,7 +1,7 @@
 //ON THIS PAGE I WANT IT TO SAY THIS IS THE FUN PAGE, IT WILL HAVE A TABLE SHOWING ALL EXCLUSIVE FLAVORS NOTHING 
 // ELSE ON THIS PAGE WILL STAY EXCEPT FOR THE DEFAULT LAYOUT AND ADDING A TABLE WITH FLAVOR NAMES OR PICTURES?
 //
-const React = require('react');
+import React from 'react';
 const DefaultLayout = require('../layout/Default')
 
 class Index extends React.Component {

@@ -1,7 +1,6 @@
 import React from 'react';
-import DefaultLayout from '../layout/Default';
 
-class New extends React.Component {
+class DefaultLayout extends React.Component {
     render() {
         const words = [
             'Green Apple', 'Shrek', 'Pekachu', 'Barbie', 'Blackberry', 'Fig', 'Grape', 'Honeydew', 'Kiwi', 'Pimp Juice', 
@@ -44,4 +43,4 @@ class New extends React.Component {
     }
 }
 
-export default New;
+export default DefaultLayout;

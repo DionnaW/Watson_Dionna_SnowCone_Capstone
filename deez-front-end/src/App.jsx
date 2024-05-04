@@ -1,13 +1,14 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/home';
-import Login from './pages/login';
-import Register from './pages/register';
-import Contact from './pages/contact';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Contact from './pages/Contact';
 import { AuthProvider } from "./context/AuthContext";
+import Toppings from './views/toppings/New';
+import Flavors from './views/flavors/New';
 
 // import Profile from './pages/Profile';
-import Header from './components/Header';
+import Header from './pages/Header';
 
 export default function App() {
   return (
@@ -16,11 +17,12 @@ export default function App() {
       <AuthProvider>
         <Header/>
         <Routes>
-          <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/contact' element={<Contact />} />
-          {/* <Route path='/profile' element={<Profile />} /> */}
+          <Route path="/flavors" element={<Flavors />} />
+          <Route path="/toppings" element={<Toppings />} />
+          <Route path='/' element={<Home />} /> 
         </Routes>
       </AuthProvider>
     </BrowserRouter>

@@ -1,7 +1,6 @@
 ///LEAVE FOR FRONTEND
-
 import React from 'react';
-import DefaultLayout from '../layout/Default';
+
 
 class New extends React.Component {
     render() {
