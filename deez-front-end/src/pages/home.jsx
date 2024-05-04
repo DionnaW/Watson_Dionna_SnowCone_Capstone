@@ -4,9 +4,17 @@ import homeImage from '../views/images/IMG_1725.jpg';
 
 export default function Home() {
     return (
-        <div>
-            home
-            {/* <img src={homeImage} alt="Home" /> */}
+        <div style={{
+            backgroundImage: `url(${homeImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '100vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}>
+            {/* Content goes here */}
         </div>
+    
     )
 }

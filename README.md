@@ -4,3 +4,4 @@ My plan for this is to have a full frontend implemented and styled using css, ht
 App is running!
 I moved, deleted, changed AS LOT of things so my app is not rumnning right now, but i need a break so i'll commit for the sake of it.
 I finally have my frontend functioning! What a success!!! GOOD NIGHT FOR TONIGHT
+ALL FUNCTIONALITY ON THE FRONT END IS WORKING!!! I just need to style and connect backend

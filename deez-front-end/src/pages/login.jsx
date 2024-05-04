@@ -31,7 +31,7 @@ const Login = () => {
 
     return (
         <div className="center">
-            {userLoggedIn && <Navigate to="/home" replace />}
+            {userLoggedIn && <Navigate to="/" replace />}
             <main className="card">
                 <div className="text-center">
                     <h1>Welcome Back!</h1>
