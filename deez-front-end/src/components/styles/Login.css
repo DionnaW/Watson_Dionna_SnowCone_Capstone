@@ -1,37 +1,35 @@
-h1, p {
-    text-align: center;
+body {
+  background-image: url('../images/IMG_1725.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
-
-form {
-    background-color: whitesmoke;
-    padding: 20px;
-    width: 300px;
-    /* the auto in this margin moves the actual form to the middle of the page */
-    margin: auto; 
-    margin-bottom: 1%;   
+.card {
+  width: 400px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: skyblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
-    color: black;
-}
-
-input[type="text"], input[type="password"] {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 100px;
-  }
-
-/* the login button and words on it */
-input[type="submit"] {
-  background-color: orchid;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+button {
+  background-color: skyblue;
+  color: black;
   cursor: pointer;
 }
+
+button:hover {
+  background-color: #ff8000; /* Orange */
+}
+
+
+
+
