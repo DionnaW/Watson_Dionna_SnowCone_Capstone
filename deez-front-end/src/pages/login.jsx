@@ -30,7 +30,7 @@ const Login = () => {
 
     return (
         <div className="center">
-            {userLoggedIn && <Navigate to="/home" replace />}
+            {userLoggedIn && <Navigate to="/Home" replace />}
 
             <main className="card">
                 <div className="text-center">
