@@ -1,5 +1,6 @@
 import React from 'react';
 import DefaultLayout from '../views/layout/Default';
+import VideoPlayer from '../components/videos/VideoPlayer';
 
 class Topping extends React.Component {
     constructor(props) {
@@ -28,29 +29,19 @@ class Topping extends React.Component {
         }, []);
 
         return (
-            <DefaultLayout title={'MORE IS BETTER'}>
-                <h1>This is only for views, but you can use your imagination for toppings!</h1>
-                <div style={{ display: 'flex', justifyContent: 'center' }}>
-                    <video controls>
-                        <source src="src/images/toppings video - Made with Clipchamp.gif" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
+            <DefaultLayout title={'THE MORE THE BETTER!'}>
+                <h1 style={{ background: "white", textAlign: "center" }}>
+                    Only for views, but use your imagination. The Impossible is possible here!
+                </h1>
+                {/* <div> */}
+                    {/* <VideoPlayer /> */}
+                {/* </div> */}
                 {chunkedToppings.map((chunk, index) => (
-                    <table key={index}>
-                        <thead>
-                            <tr>
-                                <th colSpan="2">Table {index + 1}</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {chunk.map(topping => (
-                                <tr key={topping.id}>
-                                    <td>{topping.name}</td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
+                    <ul key={index} style={{ listStyleType: "none", padding: 0, margin: 0}}>
+                        {chunk.map(topping => (
+                            <li key={topping.id} style={{ background: "white", textAlign: "center", display: "flex-box", flexDirection: "column", marginLeft: "60%", marginRight: "10%", padding: "2px", }}>{topping.name}</li>
+                        ))}
+                    </ul>
                 ))}
             </DefaultLayout>
         );
