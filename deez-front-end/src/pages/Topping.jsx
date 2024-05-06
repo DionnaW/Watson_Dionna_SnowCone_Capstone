@@ -1,6 +1,6 @@
 import React from 'react';
 import DefaultLayout from '../views/layout/Default';
-import VideoPlayer from '../components/videos/VideoPlayer';
+// import VideoPlayer from '../pages/VideoPlayer' ;
 
 class Topping extends React.Component {
     constructor(props) {
