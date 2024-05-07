@@ -18,7 +18,7 @@ function ContactForm() {
 
   return (
     <form onSubmit={submitForm} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <label htmlFor="message">Information goes here:</label>
+      <label htmlFor="message">Event details, profile changes, questions, and/or concerns here:</label>
       <textarea id="message" name="message" rows="8" style={{width: '80%', margin: '10px' }} required></textarea>
 
       <button type="submit">Submit</button>

@@ -10,13 +10,13 @@ function Home() {
   const loading = false;
 
   return (
-    <div style={{ backgroundColor: 'orchid', padding: '1rem', height: 'auto', width: '800px' }}>
+    <div style={{ backgroundColor: 'orchid', padding: '1rem', height: 'auto' }}>
       {loading ? (
         <p>Loading...</p>
       ) : (
         <>
           <p>Hello {currentUser.displayName ? currentUser.displayName : currentUser.email}, you are now logged in.</p>
-          <p>SORRY WE'RE ALL BOOKED FOR THIS YEAR.</p>
+          <p>SORRY WE'RE ALL BOOKED THIS YEAR. HERE ARE SOME EVENTS YOU CAN FIND US AT; UPDATED MONTHLY!</p>
           <FullCalendar
             plugins={[dayGridPlugin, timeGridPlugin, listPlugin]}
             initialView="dayGridMonth"
