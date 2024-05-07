@@ -21,13 +21,13 @@ const Register = () => {
         if (!isRegistering) {
             setIsRegistering(true);
             await doCreateUserWithEmailAndPassword(email, password);
-            navigate('/');
+            navigate('/home');
         }
     };
 
     return (
         <>
-            {userLoggedIn && <Navigate to={'/'} replace={true} />}
+            {userLoggedIn && <Navigate to={'/home'} replace={true} />}
             <main className="w-full h-screen flex self-center place-content-center place-items-center">
                 <div className="register-container">
                     <div className="register-title">

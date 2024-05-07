@@ -13,8 +13,8 @@ const Header = () => {
                 userLoggedIn
                     ?
                     <>
-                        <p>SORRY WE ARE ALL BOOKED</p>
-                        <button onClick={() => { doSignOut().then(() => { navigate('/') }) }} className='text-sm text-blue-600 underline'>Logout</button>
+                        
+                        <button onClick={() => { doSignOut().then(() => { navigate('/login') }) }} className='text-sm text-blue-600 underline'>Logout</button>
                     </>
                     :
                     <>

@@ -19,7 +19,7 @@ const Login = () => {
             try {
                 await doSignInWithEmailAndPassword(email, password);
                 
-                window.location.href = '/';
+                window.location.href = '/home';
             } catch (error) {
                 setErrorMessage(error.message);
             } finally {
