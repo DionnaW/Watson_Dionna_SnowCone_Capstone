@@ -1,0 +1,30 @@
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+   /* IMAGE SIZE ECT */
+  .collage img {
+    width: 100px; 
+    height: 100px; 
+    margin: 5px; 
+    object-fit: cover; 
+    animation: fadeInOut 4s infinite; 
+  }
+
+  /* HOW THE IMAGES FADE INTO VIEW */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

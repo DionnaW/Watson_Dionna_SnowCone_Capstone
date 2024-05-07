@@ -9,3 +9,4 @@ Forntend is not rendering backend data...
 Completed backend to frontend for toppings and styling!
 Flavors frontend/backend connection successful!
 Calendar complete!
+All pages are complete!

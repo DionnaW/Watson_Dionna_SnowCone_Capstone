@@ -13,11 +13,11 @@ const Header = () => {
                 userLoggedIn
                     ?
                     <>
-                        <button onClick={() => { doSignOut().then(() => { navigate('/login') }) }} className='text-sm text-blue-600 underline'>Logout</button>
+                        <p>SORRY WE ARE ALL BOOKED</p>
+                        <button onClick={() => { doSignOut().then(() => { navigate('/') }) }} className='text-sm text-blue-600 underline'>Logout</button>
                     </>
                     :
                     <>
-                        {/* <Link className='text-sm text-blue-600 underline' to={'/'}>Home</Link> */}
                         <Link className='text-sm text-blue-600 underline' to={'/login'}>Login</Link>
                         <Link className='text-sm text-blue-600 underline' to={'/register'}>Register Here</Link>
                         <Link className='text-sm text-blue-600 underline' to={'/contact'}>Contact Us</Link>
